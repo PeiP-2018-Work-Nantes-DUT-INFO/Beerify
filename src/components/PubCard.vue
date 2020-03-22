@@ -27,15 +27,30 @@
         class="py-2"
         :class="right ? 'text-xs-left' : 'text-xs-right'"
       >
-        <v-btn flat icon color="primary" small>
-          <v-icon small>mdi-star</v-icon>
-        </v-btn>
-        <v-btn flat icon color="success" small>
-          <v-icon small>mdi-open-in-new</v-icon>
-        </v-btn>
-        <v-btn flat icon color="red lighten-2" small>
-          <v-icon small>mdi-map-marker-question</v-icon>
-        </v-btn>
+        <v-tooltip top>
+          <template v-slot:activator="{ on }">
+            <v-btn flat icon color="primary" small v-on="on">
+              <v-icon small>mdi-star</v-icon>
+            </v-btn>
+          </template>
+          <span>Review</span>
+        </v-tooltip>
+        <v-tooltip top>
+          <template v-slot:activator="{ on }">
+            <v-btn flat icon color="success" small v-on="on">
+              <v-icon small>mdi-open-in-new</v-icon>
+            </v-btn>
+          </template>
+          <span>Website</span>
+        </v-tooltip>
+        <v-tooltip top>
+          <template v-slot:activator="{ on }">
+            <v-btn flat icon color="red lighten-2" small v-on="on">
+              <v-icon small>mdi-map-marker-question</v-icon>
+            </v-btn>
+          </template>
+          <span>Map</span>
+        </v-tooltip>
       </v-card-text>
     </v-card>
   </v-hover>

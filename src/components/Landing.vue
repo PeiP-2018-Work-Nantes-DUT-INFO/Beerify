@@ -117,33 +117,26 @@
                 <v-icon size="36">mdi-store</v-icon>
               </template>
               <template v-slot:opposite>
-                <v-layout align-center>
-                  <v-flex d-inline>
-                    <span
-                      v-if="index % 2 == 1"
-                      class="display-3 font-weight-thin pl-5"
-                      >{{ pub.overall / 20.0 }}</span
-                    ></v-flex
-                  >
-                  <v-flex d-inline
-                    ><v-rating
-                      class="hidden-sm-and-down"
-                      background-color="primary"
-                      hover
-                      half-increments
-                      large
-                      readonly
-                      :value="pub.overall / 20.0"
-                    ></v-rating
-                  ></v-flex>
-                  <v-flex d-inline
-                    ><span
-                      v-if="index % 2 == 0"
-                      class="display-3 font-weight-thin pr-5"
-                      >{{ pub.overall / 20.0 }}</span
-                    ></v-flex
-                  >
-                </v-layout>
+                <span
+                  v-if="index % 2 == 1"
+                  class="display-3 font-weight-thin pr-4 d-inline"
+                  >{{ pub.overall / 20.0 }}</span
+                >
+                <v-rating
+                  class="hidden-sm-and-down d-inline"
+                  background-color="primary"
+                  hover
+                  half-increments
+                  large
+                  readonly
+                  dense
+                  :value="pub.overall / 20.0"
+                ></v-rating>
+                <span
+                  v-if="index % 2 == 0"
+                  class="display-3 font-weight-thin pl-4 d-inline"
+                  >{{ pub.overall / 20.0 }}</span
+                >
               </template>
               <PubCard :pub="pub" :right="index % 2 == 0" />
             </v-timeline-item>
