@@ -31,6 +31,11 @@ export default {
       showMenu: false,
       langs: [
         {
+          lang: 'fr',
+          flag: 'fr',
+          class: 'btnFR'
+        },
+        {
           lang: 'en',
           flag: 'gb',
           class: 'btnEN'
@@ -39,6 +44,11 @@ export default {
           lang: 'es',
           flag: 'es',
           class: 'btnES'
+        },
+        {
+          lang: 'de',
+          flag: 'de',
+          class: 'btnDE'
         },
         {
           lang: 'cn',

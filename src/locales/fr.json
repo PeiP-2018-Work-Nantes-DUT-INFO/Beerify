@@ -164,20 +164,22 @@
     "SAVE": "Sauvegarder",
     "PROFILE_SAVED_SUCCESSFULLY": "Profil sauvegardé avec succès"
   },
-  "beer": {
-    "CARACTERISTICS": {
-      "QUANTITY": "Quantité",
-      "PACKAGING": "Emballage",
-      "BRANDS": "Marque"
-    },
+  "beers": {
+    "CARACTERISTICS": "Caractéristiques",
+    "QUANTITY": "Quantité",
+    "PACKAGING": "Emballage",
+    "BRANDS": "Marque",
     "INGREDIENTS": "Ingrédients",
-    "SUPPLEMENT": "Information supplémentaire",
+    "IMAGES": "Images",
     "CATEGORIES": "Catégorie",
-    "NUTRIMENTS": {
-      "ALCOHOL": "Degré d'alcool",
-      "SALT": "Sel",
-      "SODIUM": "Sodium"
-    },
-    "LABEL": "Labels"
+    "NUTRIMENTS": "Valeurs nutritionnelles",
+    "ALCOHOL": "Degré d'alcool",
+    "SALT": "Sel",
+    "SODIUM": "Sodium",
+    "NOVA": "Indice NOVA",
+    "INFORMATIONS": "Informations supplémentaires",
+    "MANUFACTURING_PLACES": "Lieux de fabrication ou de transformation",
+    "WEBSITE": "Site web",
+    "LABELS": "Labels"
   }
 }
