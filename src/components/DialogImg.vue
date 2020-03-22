@@ -36,7 +36,7 @@ export default {
     }
   },
   props: {
-    img: String
+    img: Object
   }
 }
 </script>
