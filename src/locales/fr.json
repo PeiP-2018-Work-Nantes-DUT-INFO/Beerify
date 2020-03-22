@@ -1,0 +1,183 @@
+{
+  "errors": {
+    "BAD_TOKEN": "Mauvais jeton",
+    "WRONG_PASSWORD": "Mauvais mot de passe",
+    "USER_DOES_NOT_EXIST": "L'utilisateur n'existe",
+    "PASSWORDS_DONT_MATCH": "Les mots de passe ne correspondent pas",
+    "PASSWORD_TOO_SHORT_MIN_5": "Mot de passe trop court, 5 caractères minimum",
+    "BLOCKED_USER": "Trop de tentatives de connexion ratées, blocage temporaire de l'utilisateur",
+    "SERVER_TIMEOUT_CONNECTION_ERROR": "Le serveur ne répond pas, erreur de connexion",
+    "404": "404 Page non trouvée",
+    "EMAIL_IS_NOT_VALID": "E-mail non valide",
+    "IS_EMPTY": "Champs vides",
+    "ERROR": "Erreur",
+    "MISSING": "Champs manquants",
+    "NOT_FOUND_OR_ALREADY_VERIFIED": "Non trouvé ou déjà vérifié",
+    "NOT_FOUND_OR_ALREADY_USED": "Non trouvé ou déjà utilisé",
+    "NOT_FOUND": "Non trouvé",
+    "UNAUTHORIZED": "Non autorisé",
+    "EMAIL_ALREADY_EXISTS": "Cet E-mail existe déjà",
+    "ID_MALFORMED": "ID malformé",
+    "ERROR_WITH_FILTER": "Erreur avec le filtre",
+    "CITY_ALREADY_EXISTS": "La ville existe déjà"
+  },
+  "common": {
+    "DELETE": "Supprimé",
+    "CANCEL": "Annulé",
+    "WARNING": "Attention",
+    "DO_YOU_REALLY_WANT_TO_DELETE_THIS_ITEM": "Voulez-vous vraiment supprimé cet élément ?",
+    "CLOSE": "Fermer",
+    "SAVED_SUCCESSFULLY": "Sauvegarde réussie",
+    "DELETED_SUCCESSFULLY": "Suppression réussie",
+    "CREATED": "Créé à",
+    "UPDATED": "Supprimé à ",
+    "GO_BACK": "Retour"
+  },
+  "loading": {
+    "PLEASE_WAIT": "Veuillez patientez..."
+  },
+  "footer": {
+    "MADE_WITH": "Fait avec",
+    "BY": "par"
+  },
+  "menuItems": {
+    "HOME": "Accueil",
+    "ABOUT": "A propos",
+    "MY_PROFILE": "Mon profil",
+    "SIGNUP": "Inscription",
+    "LOGIN": "Connexion",
+    "LOGOUT": "Deconnexion"
+  },
+  "adminItems": {
+    "ADMIN": "Administrateur",
+    "CITIES": "Villes",
+    "USERS": "Utilisateurs"
+  },
+  "roles": {
+    "ADMIN": "Administrateur",
+    "USER": "Utilisateur"
+  },
+  "dataTable": {
+    "NEW_ITEM": "Nouvel élément",
+    "EDIT_ITEM": "Modifier l'élément",
+    "CANCEL": "Annuler",
+    "SAVE": "Sauvegarder",
+    "EDIT": "Editer",
+    "DELETE": "Suprimmer",
+    "RESET": "Réinitialiser",
+    "ACTIONS": "Actions",
+    "ROWS_PER_PAGE": "Lignes par page",
+    "NO_DATA": "Pas de données",
+    "NO_RESULTS": "Pas de résultats",
+    "OF": "de",
+    "SEARCH": "Rechercher"
+  },
+  "cities": {
+    "TITLE": "Villes",
+    "headers": {
+      "NAME": "Nom"
+    }
+  },
+  "users": {
+    "TITLE": "Utilisateurs",
+    "headers": {
+      "NAME": "Nom",
+      "EMAIL": "E-mail",
+      "ROLE": "Role",
+      "VERIFIED": "Vérifié",
+      "CITY": "Ville",
+      "COUNTRY": "Pays",
+      "PHONE": "Téléphone"
+    },
+    "PASSWORD": "Mot de passe",
+    "CONFIRM_PASSWORD": "Confirmer le mot de passe"
+  },
+  "landing": {
+    "TITLE": "Arrivée",
+    "DESCRIPTION": "Cette page est accessible au public.",
+    "BUY_ME_A_COFFEE": "Achetez-moi un café",
+    "BUY_ME_A_COFFEE_DESCRIPTION": "Je fais de mon mieux pour vous offrir une bonne expérience lors de l'utilisation des mes applications, donc si vous souhaitez me dire \"merci\", veuillez cliquer sur le bouton et m'offrir un café.",
+    "DESCRIPTION_VUE": "Ce projet est créé pour aider d'autres développeurs web à créer une application VueJS de base de manière simple.",
+    "DESCRIPTION_API": "La démo est également liée à un projet d'API MongoDB JWT REST Node.js express.js qui montre comment ce client peut être intégré à une API.",
+    "API_DOCUMENTATION": "Documentation de l'API",
+    "FRONTEND_DOCUMENTATION": "Documentation de la partie cliente"
+  },
+  "home": {
+    "TITLE": "Accueil protégé",
+    "GREETING": "Bienvenue %{0}",
+    "DESCRIPTION": "Cette page n'est accessible en privé que lorsque les utilisateurs se connectent avec leurs identifiants",
+    "VERIFY_YOUR_ACCOUNT": "IMPORTANT: Vérifiez votre compte",
+    "VERIFY_YOUR_ACCOUNT_DESCRIPTION": "Vous devez vérifier votre compte en cliquant sur le lien qui vous a été envoyé par votre e-mail pour pouvoir profiter de toutes les fonctionnalités de notre application",
+    "CLOSE": "Fermer"
+  },
+  "about": {
+    "TITLE": "A propos",
+    "DESCRIPTION": "Cette page est accessible au public."
+  },
+  "login": {
+    "TITLE": "Connexion",
+    "DESCRIPTION": "Ceci est une démo. La base de données se réinitialise toutes les 30 minutes. Tout ce que vous ferez sera donc perdu à la fin de ce laps de temps. <br />E-mail : admin@admin.com <br />Mot de passe : 12345",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Mot de passe",
+    "LOGIN": "Connexion",
+    "FORGOT_PASSWORD": "Mot de passe oublié ?"
+  },
+  "forgotPassword": {
+    "TITLE": "Mot de passe oublié",
+    "EMAIL": "E-mail",
+    "DESCRIPTION": "Saisissez votre e-mail afin que nous puissions vous envoyer un message contenant les instructions pour récupérer votre mot de passe",
+    "RECOVER": "Récupérer",
+    "RESET_EMAIL_SENT": "Nous avons envoyé un message à %{0} avec les instructions pour récupérer votre mot de passe"
+  },
+  "resetPassword": {
+    "TITLE": "Changer de mot de passe",
+    "PASSWORD": "Mot de passe",
+    "CONFIRM_PASSWORD": "Confirmer le mot de passe",
+    "CHANGE_PASSWORD": "Changer de mot de passe",
+    "PASSWORD_CHANGED": "Le mot de passe a été modifié avec succès"
+  },
+  "signup": {
+    "TITLE": "Inscription",
+    "NAME": "Nom",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Mot de passe",
+    "CONFIRM_PASSWORD": "Confirmer le mot de passe",
+    "SIGN_ME_UP": "Inscrivez-moi"
+  },
+  "verify": {
+    "TITLE": "Vérification de l'E-mail",
+    "EMAIL_VERIFIED": "E-mail vérifié avec succès"
+  },
+  "myProfile": {
+    "TITLE": "Mon profil",
+    "CHANGE_MY_PASSWORD": "Changer mon mot de passe",
+    "CURRENT_PASSWORD": "Mot de passe actuel",
+    "NEW_PASSWORD": "Nouveau mot de passe",
+    "CONFIRM_NEW_PASSWORD": "Confirmer le nouveau mot de passe",
+    "PASSWORD_CHANGED": "Le mot de passe a été modifié avec succès",
+    "NAME": "Nom",
+    "EMAIL": "E-mail",
+    "PHONE": "Téléphone",
+    "CITY": "Ville",
+    "NO_RESULTS_FOUND": "Aucun résultat trouvé",
+    "COUNTRY": "Pays",
+    "SAVE": "Sauvegarder",
+    "PROFILE_SAVED_SUCCESSFULLY": "Profil sauvegardé avec succès"
+  },
+  "beer": {
+    "CARACTERISTICS": {
+      "QUANTITY": "Quantité",
+      "PACKAGING": "Emballage",
+      "BRANDS": "Marque"
+    },
+    "INGREDIENTS": "Ingrédients",
+    "SUPPLEMENT": "Information supplémentaire",
+    "CATEGORIES": "Catégorie",
+    "NUTRIMENTS": {
+      "ALCOHOL": "Degré d'alcool",
+      "SALT": "Sel",
+      "SODIUM": "Sodium"
+    },
+    "LABEL": "Labels"
+  }
+}
