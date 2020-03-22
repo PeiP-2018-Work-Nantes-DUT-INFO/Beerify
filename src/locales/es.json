@@ -163,5 +163,21 @@
     "COUNTRY": "País",
     "SAVE": "Guardar",
     "PROFILE_SAVED_SUCCESSFULLY": "Perfil guardado exitosamente"
+  },
+  "beer": {
+    "CARACTERISTICS": {
+      "QUANTITY": "Cantidad",
+      "PACKAGING": "Embalaje",
+      "BRANDS": "Marca"
+    },
+    "INGREDIENTS": "Ingredientes",
+    "SUPPLEMENT": "Más información",
+    "CATEGORIES": "Categoría",
+    "NUTRIMENTS": {
+      "ALCOHOL": "Nivel de alcohol",
+      "SALT": "Sal",
+      "SODIUM": "Sodio"
+    },
+    "LABEL": "Labels"
   }
 }

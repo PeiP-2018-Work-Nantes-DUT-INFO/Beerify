@@ -163,5 +163,21 @@
     "COUNTRY": "国家",
     "SAVE": "保存",
     "PROFILE_SAVED_SUCCESSFULLY": "个人信息保存成功"
+  },
+  "beer": {
+    "CARACTERISTICS": {
+      "QUANTITY": "数量",
+      "PACKAGING": "包装",
+      "BRANDS": "品牌介绍"
+    },
+    "INGREDIENTS": "辅料",
+    "SUPPLEMENT": "更多信息",
+    "CATEGORIES": "类别",
+    "NUTRIMENTS": {
+      "ALCOHOL": "酒精含量",
+      "SALT": "盐业",
+      "SODIUM": "钠"
+    },
+    "LABEL": "标签"
   }
 }
