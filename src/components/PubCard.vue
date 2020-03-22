@@ -29,7 +29,15 @@
       >
         <v-tooltip top>
           <template v-slot:activator="{ on }">
-            <v-btn flat icon color="primary" small v-on="on">
+            <v-btn
+              flat
+              icon
+              color="primary"
+              small
+              v-on="on"
+              :href="pub.rewiewlink"
+              target="_blank"
+            >
               <v-icon small>mdi-star</v-icon>
             </v-btn>
           </template>
@@ -37,7 +45,15 @@
         </v-tooltip>
         <v-tooltip top>
           <template v-slot:activator="{ on }">
-            <v-btn flat icon color="success" small v-on="on">
+            <v-btn
+              flat
+              icon
+              color="success"
+              small
+              v-on="on"
+              :href="pub.proxylink"
+              target="_blank"
+            >
               <v-icon small>mdi-open-in-new</v-icon>
             </v-btn>
           </template>
@@ -45,7 +61,15 @@
         </v-tooltip>
         <v-tooltip top>
           <template v-slot:activator="{ on }">
-            <v-btn flat icon color="red lighten-2" small v-on="on">
+            <v-btn
+              flat
+              icon
+              color="red lighten-2"
+              small
+              v-on="on"
+              :href="pub.blogmap"
+              target="_blank"
+            >
               <v-icon small>mdi-map-marker-question</v-icon>
             </v-btn>
           </template>

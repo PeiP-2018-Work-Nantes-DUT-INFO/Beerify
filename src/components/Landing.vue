@@ -1,52 +1,17 @@
 <template>
   <v-container fluid>
-    <!-- SEARCH -->
-    <v-autocomplete
-      chips
-      clearable
-      hide-details
-      hide-selected
-      item-text="name"
-      item-value="symbol"
-      label="Search for a town..."
-      solo
-      color="second"
-    >
-      <template v-slot:no-data>
-        <v-list-tile>
-          <v-list-tile-title>
-            Search for your favorite
-            <strong>City</strong>
-          </v-list-tile-title>
-        </v-list-tile>
-      </template>
-      <template v-slot:selection="{ item, selected }">
-        <v-chip :selected="selected" color="blue-grey" class="white--text">
-          <v-icon left>mdi-coin</v-icon>
-          <span v-text="item.name"></span>
-        </v-chip>
-      </template>
-      <template v-slot:item="{ item }">
-        <v-list-tile-avatar
-          color="indigo"
-          class="headline font-weight-light white--text"
-        >
-          {{ item.name.charAt(0) }}
-        </v-list-tile-avatar>
-        <v-list-tile-content>
-          <v-list-tile-title v-text="item.name"></v-list-tile-title>
-          <v-list-tile-sub-title v-text="item.symbol"></v-list-tile-sub-title>
-        </v-list-tile-content>
-        <v-list-tile-action>
-          <v-icon>mdi-coin</v-icon>
-        </v-list-tile-action>
-      </template>
-    </v-autocomplete>
-
     <v-layout row wrap>
       <Heading :title="$t('landing.TITLE')" />
       <Description :description="$t('landing.DESCRIPTION')" />
     </v-layout>
+
+    <!-- SEARCH -->
+    <v-text-field
+      label="Search for a city..."
+      class="mx-auto my-text-style"
+      clearable
+      autofocus
+    ></v-text-field>
 
     <!-- METEO -->
     <v-card class="mx-auto elevation-0" dark max-width="400">
@@ -247,3 +212,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.my-text-style {
+  max-width: 400px;
+}
+</style>
