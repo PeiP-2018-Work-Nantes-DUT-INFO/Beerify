@@ -21,10 +21,18 @@
           {{ $t('beers.' + row.text) }} :
         </v-list-tile-content>
         <v-list-tile-content class="align-end">
-          {{ nutriments[row.value100g] + ' ' + nutriments[row.unit] }}
+          {{
+            nutriments[row.value100g]
+              ? nutriments[row.value100g] + ' ' + nutriments[row.unit]
+              : ''
+          }}
         </v-list-tile-content>
         <v-list-tile-content class="align-end">
-          {{ nutriments[row.value] + ' ' + nutriments[row.unit] }}
+          {{
+            nutriments[row.value]
+              ? nutriments[row.value] + ' ' + nutriments[row.unit]
+              : ''
+          }}
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
