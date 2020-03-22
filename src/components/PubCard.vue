@@ -35,13 +35,13 @@
               color="primary"
               small
               v-on="on"
-              :href="pub.rewiewlink"
+              :href="pub.reviewlink"
               target="_blank"
             >
               <v-icon small>mdi-star</v-icon>
             </v-btn>
           </template>
-          <span>Review</span>
+          <span>{{ $t('landing.pub.review') }}</span>
         </v-tooltip>
         <v-tooltip top>
           <template v-slot:activator="{ on }">
@@ -51,13 +51,13 @@
               color="success"
               small
               v-on="on"
-              :href="pub.proxylink"
+              :href="pub.reviewlink"
               target="_blank"
             >
               <v-icon small>mdi-open-in-new</v-icon>
             </v-btn>
           </template>
-          <span>Website</span>
+          <span>{{ $t('landing.pub.website') }}</span>
         </v-tooltip>
         <v-tooltip top>
           <template v-slot:activator="{ on }">
@@ -67,13 +67,13 @@
               color="red lighten-2"
               small
               v-on="on"
-              :href="pub.blogmap"
+              :href="pub.proxylink"
               target="_blank"
             >
               <v-icon small>mdi-map-marker-question</v-icon>
             </v-btn>
           </template>
-          <span>Map</span>
+          <span>{{ $t('landing.pub.map') }}</span>
         </v-tooltip>
       </v-card-text>
     </v-card>
