@@ -29,3 +29,18 @@ export const TOTAL_CITIES = 'TOTAL_CITIES'
 // Admin - Users
 export const USERS = 'USERS'
 export const TOTAL_USERS = 'TOTAL_USERS'
+// Beers - categories
+export const CATEGORIES = 'CATEGORIES'
+export const TOTAL_CATEGORIES = 'TOTAL_CATEGORIES'
+// Beers - browser
+export const BEERS = 'BEERS'
+export const TOTAL_BEERS = 'TOTAL_BEERS'
+export const SELECT_BEER = 'BEER'
+// Landing - weather
+export const CITY = 'CITY'
+export const FORECASTS = 'FORECASTS'
+// Landing - pubs
+export const PUBS = 'PUBS'
+export const TOTAL_PUBS = 'TOTAL_PUBS'
+// Warning
+export const WARNING = 'WARNING'
