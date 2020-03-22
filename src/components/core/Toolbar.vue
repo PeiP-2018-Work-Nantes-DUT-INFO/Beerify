@@ -22,12 +22,12 @@
           <v-list-tile-content>{{ item.title }}</v-list-tile-content>
         </v-list-tile>
 
-        <v-list-group v-if="admin" prepend-icon="mdi-lock" no-action>
+        <v-list-group prepend-icon="fa-beer" no-action>
           <v-list-tile slot="activator">
-            <v-list-tile-title>{{ $t('adminItems.ADMIN') }}</v-list-tile-title>
+            <v-list-tile-title>{{ $t('beersItems.BEERS') }}</v-list-tile-title>
           </v-list-tile>
           <v-list-tile
-            v-for="(item, index) in adminItems"
+            v-for="(item, index) in beersItems"
             :key="index"
             :to="{ name: item.link }"
             exact
@@ -38,15 +38,6 @@
             </v-list-tile-content>
           </v-list-tile>
         </v-list-group>
-
-        <v-list-tile v-if="isTokenSet" @click="userLogout">
-          <v-list-tile-action>
-            <v-icon>mdi-exit-to-app</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            {{ $t('menuItems.LOGOUT') }}
-          </v-list-tile-content>
-        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar app>
@@ -56,17 +47,9 @@
       <v-toolbar-title class="headline text-uppercase ml-0">
         <div v-resize-text>
           <router-link
-            :to="{ name: 'home' }"
-            tag="span"
-            style="cursor: pointer"
-            v-if="isTokenSet"
-            >{{ appTitle }}</router-link
-          >
-          <router-link
             :to="{ name: 'landing' }"
             tag="span"
             style="cursor: pointer"
-            v-else
             >{{ appTitle }}</router-link
           >
         </div>
@@ -85,15 +68,15 @@
           &nbsp;{{ item.title }}
         </v-btn>
 
-        <v-menu v-if="admin" offset-y class="hidden-sm-and-down">
-          <v-btn slot="activator" flat class="btnAdmin">
-            <v-icon>mdi-lock</v-icon>
-            &nbsp;{{ $t('adminItems.ADMIN') }}
+        <v-menu offset-y class="hidden-sm-and-down">
+          <v-btn slot="activator" flat class="btnBeers">
+            <v-icon>fa-beer</v-icon>
+            &nbsp;{{ $t('beersItems.BEERS') }}
           </v-btn>
           <v-list>
             <v-list-tile
               active-class="white--text"
-              v-for="(item, index) in adminItems"
+              v-for="(item, index) in beersItems"
               :key="index"
               :to="{ name: item.link }"
               exact
@@ -107,15 +90,6 @@
           </v-list>
         </v-menu>
 
-        <v-btn
-          flat
-          v-if="isTokenSet"
-          @click="userLogout"
-          class="hidden-sm-and-down btnLogout"
-        >
-          <v-icon left>mdi-exit-to-app</v-icon>
-          {{ $t('menuItems.LOGOUT') }}
-        </v-btn>
         <LocaleChanger />
       </v-toolbar-items>
     </v-toolbar>
@@ -180,49 +154,24 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['appTitle', 'isTokenSet', 'user']),
-    admin() {
-      return this.user !== null ? this.user.role === 'admin' : false
-    },
-    adminItems() {
+    ...mapGetters(['appTitle']),
+    beersItems() {
       return [
         {
-          title: this.$t('adminItems.CITIES'),
-          link: 'admin-cities',
-          icon: 'mdi-city',
-          class: 'btnAdminCities'
+          title: this.$t('beersItems.CATEGORIES'),
+          link: 'beers-categories',
+          icon: 'category',
+          class: 'btnBeersCategories'
         },
         {
-          title: this.$t('adminItems.USERS'),
-          link: 'admin-users',
-          icon: 'mdi-account-supervisor',
-          class: 'btnAdminUsers'
+          title: this.$t('beersItems.BROWSE'),
+          link: 'beers-browser',
+          icon: 'search',
+          class: 'btnBeersBrowser'
         }
       ]
     },
     menuItems() {
-      if (this.isTokenSet) {
-        return [
-          {
-            title: this.$t('menuItems.HOME'),
-            link: 'home',
-            icon: 'mdi-home',
-            class: 'btnHome'
-          },
-          {
-            title: this.$t('menuItems.ABOUT'),
-            link: 'about',
-            icon: 'mdi-help-circle-outline',
-            class: 'btnAbout'
-          },
-          {
-            title: this.$t('menuItems.MY_PROFILE'),
-            link: 'profile',
-            icon: 'mdi-face',
-            class: 'btnProfile'
-          }
-        ]
-      }
       return [
         {
           title: this.$t('menuItems.HOME'),
@@ -248,11 +197,6 @@ export default {
           class: 'btnLogin'
         }
       ]
-    }
-  },
-  methods: {
-    userLogout() {
-      this.$store.dispatch('userLogout')
     }
   }
 }
