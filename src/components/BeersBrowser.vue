@@ -161,13 +161,9 @@ export default {
       ]
     },
     categories() {
-      return Array.prototype.concat(
-        this.$store.state.beersCategories.categories,
-        [{ text: this.$i18n.t('beers.CATEGORY_ANY'), value: 'any' }]
-      )
-    },
-    displayLocale() {
-      return this.$i18n.locale
+      return Array.prototype.concat(this.$store.getters.tabCategories, [
+        { text: this.$i18n.t('beers.CATEGORY_ANY'), value: 'any' }
+      ])
     },
     items() {
       return this.$store.state.beersBrowser.beers
@@ -177,9 +173,6 @@ export default {
     }
   },
   watch: {
-    displayLocale() {
-      this.doGetCategories()
-    },
     dialog(value) {
       return value ? true : this.close()
     },
