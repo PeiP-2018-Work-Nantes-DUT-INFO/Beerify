@@ -41,7 +41,7 @@ export const buildPayloadPagination = (pagination, category, search) => {
 
   let query = {}
 
-  // If search and fields are defined
+  // If search is defined
   if (search) {
     query = {
       // eslint-disable-next-line camelcase
