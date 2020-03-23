@@ -165,7 +165,7 @@ export default {
   metaInfo() {
     return {
       title: this.$store.getters.appTitle,
-      titleTemplate: `${this.$t('beer.TITLE')} - %s`
+      titleTemplate: `${this.$t('beers.TITLE')} - %s`
     }
   },
   components: {
@@ -179,7 +179,7 @@ export default {
     },
     appTitle() {
       if (!this.beer) {
-        return this.$t('beer.TITLE')
+        return this.$t('beers.TITLE')
       }
       const name = this.beer.product_name
         ? this.beer.product_name

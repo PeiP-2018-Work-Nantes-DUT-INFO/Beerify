@@ -6,7 +6,7 @@
       &nbsp;{{ $t('footer.BY') }}:
     </div>
     <div>
-      <a href="https://daniel-avellaneda.com">https://daniel-avellaneda.com</a>
+      ESA Drinking Dev Team
     </div>
   </v-footer>
 </template>

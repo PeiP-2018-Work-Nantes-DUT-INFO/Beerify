@@ -41,7 +41,7 @@
               <v-icon small>mdi-star</v-icon>
             </v-btn>
           </template>
-          <span>{{ $t('landing.pub.review') }}</span>
+          <span>{{ $t('landing.pub.REVIEW') }}</span>
         </v-tooltip>
         <v-tooltip top>
           <template v-slot:activator="{ on }">
@@ -57,7 +57,7 @@
               <v-icon small>mdi-open-in-new</v-icon>
             </v-btn>
           </template>
-          <span>{{ $t('landing.pub.website') }}</span>
+          <span>{{ $t('landing.pub.WEBSITE') }}</span>
         </v-tooltip>
         <v-tooltip top>
           <template v-slot:activator="{ on }">
@@ -73,7 +73,7 @@
               <v-icon small>mdi-map-marker-question</v-icon>
             </v-btn>
           </template>
-          <span>{{ $t('landing.pub.map') }}</span>
+          <span>{{ $t('landing.pub.MAP') }}</span>
         </v-tooltip>
       </v-card-text>
     </v-card>

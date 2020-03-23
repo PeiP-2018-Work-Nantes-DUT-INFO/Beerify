@@ -158,21 +158,21 @@ export default {
       return [
         {
           icon: 'mdi-weather-windy',
-          title: this.$t('landing.weather.wind'),
+          title: this.$t('landing.weather.WIND'),
           value: `${this.currentForecast.wind.speed} ${this.$t(
-            'landing.weather.windUnit'
+            'landing.weather.WIND_UNIT'
           )}`
         },
         {
           icon: 'mdi-water-percent',
-          title: this.$t('landing.weather.humidity'),
+          title: this.$t('landing.weather.HUMIDITY'),
           value: `${this.currentForecast.main.humidity} %`
         },
         {
           icon: 'mdi-nuke',
-          title: this.$t('landing.weather.pressure'),
+          title: this.$t('landing.weather.PRESSURE'),
           value: `${this.currentForecast.main.pressure} ${this.$t(
-            'landing.weather.pressureUnit'
+            'landing.weather.PRESSURE_UNIT'
           )}`
         }
       ]

@@ -1,16 +1,8 @@
 {
   "errors": {
-    "BAD_TOKEN": "Bad token",
     "SERVER_TIMEOUT_CONNECTION_ERROR": "Server is not responding, connection error",
     "404": "404 Page not found",
-    "IS_EMPTY": "Empty fields",
-    "ERROR": "Error",
-    "NOT_FOUND_OR_ALREADY_VERIFIED": "Not found or already verified",
-    "NOT_FOUND_OR_ALREADY_USED": "Not found or already used",
-    "NOT_FOUND": "Not found",
-    "ID_MALFORMED": "ID malformed",
-    "ERROR_WITH_FILTER": "Error with filter",
-    "CITY_ALREADY_EXISTS": "City already exists"
+    "ERROR": "Error"
   },
   "common": {
     "CANCEL": "Cancel",
@@ -45,21 +37,30 @@
     "NO_RESULTS": "No results",
     "OF": "of",
     "SEARCH": "Search",
-    "PICTURE": "Picture"
+    "PICTURE": "Picture",
+    "VIEW": "Display details"
   },
   "landing": {
     "TITLE": "Welcome",
-    "DESCRIPTION": "You're in the right place if you search for adventure surrounded by beers.",
-    "BUY_ME_A_COFFEE": "Buy me a coffee",
-    "BUY_ME_A_COFFEE_DESCRIPTION": "I'm doing my best to provide you a good experience when using my apps, so if you like what I'm doing and wish to say \"thanks!\", please click the button and buy me a coffee.",
-    "DESCRIPTION_VUE": "This project is created to help other web developers create a basic VueJS app in an easy way.",
-    "DESCRIPTION_API": "Demo is also linked to a Node.js express.js MongoDB JWT REST API project that shows how this frontend can be integrated to an API.",
-    "API_DOCUMENTATION": "API documentation",
-    "FRONTEND_DOCUMENTATION": "Frontend documentation"
+    "DESCRIPTION": "You're in the right place if you search for adventure surrounded by beers. Start by searching a location and we show you the weather and an awesome list of pubs",
+    "PROJECT_DESCRIPTION": "Beerify is a project pushed by the ESA Drinking Development Team. It's an initiation from the Nantes Brewers Alliance.",
+    "DESCRIPTION_VUE": "This project is using Open Food Facts, Openweathermap and The Beer Mapping project services",
+    "weather": {
+      "WIND": "Wind",
+      "WIND_UNIT": "Km/h",
+      "HUMIDITY": "Humidity",
+      "PRESSURE": "Pressure",
+      "PRESSURE_UNIT": "Pa"
+    },
+    "pub": {
+      "REVIEW": "Review",
+      "MAP": "Map",
+      "WEBSITE": "Website"
+    }
   },
   "about": {
     "TITLE": "About",
-    "DESCRIPTION": "This page is publicly available"
+    "DESCRIPTION": "Beerify is like Spotify, buf for beers"
   },
   "beers": {
     "TITLE": "Search for beers",
@@ -78,16 +79,22 @@
     "PACKAGING": "Packaging",
     "BRANDS": "Brand",
     "INGREDIENTS": "Ingredients",
-    "SUPPLEMENT": "Pictures",
+    "IMAGES": "Pictures",
     "CATEGORIES": "Categories",
     "NUTRIMENTS": "Nutritional informations",
     "ALCOHOL": "Degree of alcohol",
     "SALT": "Salt",
     "SODIUM": "Sodium",
-    "LABEL": "Label",
+    "LABELS": "Labels",
     "NOVA": "NOVA Index",
     "INFORMATIONS": "More informations",
     "MANUFACTURING_PLACES": "Manufacturing places",
-    "WEBSITE": "Website"
+    "WEBSITE": "Website",
+    "STORES": "Stores",
+    "ENERGY_KJ": "Energy (KJ)",
+    "ENERGY_KCAL": "Energy (KCAL)",
+    "FAT": "Fat",
+    "CARBS": "Carbs",
+    "PROTEIN": "Proteins"
   }
 }
