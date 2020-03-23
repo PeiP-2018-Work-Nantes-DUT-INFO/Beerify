@@ -11,22 +11,25 @@
           xs12
           md4
         >
-          <v-item>
-            <v-hover>
-              <v-card
-                slot-scope="{ hover }"
-                :color="hover ? 'primary' : ''"
-                class="d-flex align-center"
-                height="200"
-              >
-                <v-scroll-y-transition>
-                  <div class="display-2 text-xs-center">
-                    {{ cat.text }}
-                  </div>
-                </v-scroll-y-transition>
-              </v-card>
-            </v-hover>
-          </v-item>
+          <v-item-group>
+            <v-item>
+              <v-hover>
+                <v-card
+                  slot-scope="{ hover }"
+                  :color="hover ? 'primary darken-3' : ''"
+                  class="d-flex align-center pointer"
+                  :class="`elevation-${hover ? 18 : 2}`"
+                  height="200"
+                >
+                  <v-scroll-y-transition>
+                    <div class="display-1 text-xs-center">
+                      {{ cat.text }}
+                    </div>
+                  </v-scroll-y-transition>
+                </v-card>
+              </v-hover>
+            </v-item>
+          </v-item-group>
         </v-flex>
       </v-layout>
     </v-container>
@@ -65,3 +68,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.pointer {
+  cursor: pointer;
+}
+</style>
