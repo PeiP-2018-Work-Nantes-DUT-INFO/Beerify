@@ -43,8 +43,8 @@
   "landing": {
     "TITLE": "Welcome",
     "DESCRIPTION": "You're in the right place if you search for adventure surrounded by beers. Start by searching a location and we show you the weather and an awesome list of pubs",
-    "PROJECT_DESCRIPTION": "Beerify is a project pushed by the ESA Drinking Development Team. It's an initiation from the Nantes Brewers Alliance.",
-    "DESCRIPTION_VUE": "This project is using Open Food Facts, Openweathermap and The Beer Mapping project services",
+    "PROJECT_DESCRIPTION": "Beerify is a project pushed by the ESA (Eliott Simon Adame) Drinking Development Team. It's an initiation from the Nantes Brewers Alliance.",
+    "DESCRIPTION_VUE": "This project is using Open Food Facts, Openweathermap and The Beer Mapping Project services. This project is realized within the framework of the Javascript course of the IUT of Nantes.",
     "weather": {
       "WIND": "Wind",
       "WIND_UNIT": "Km/h",
@@ -60,7 +60,7 @@
   },
   "about": {
     "TITLE": "About",
-    "DESCRIPTION": "Beerify is like Spotify, buf for beers"
+    "DESCRIPTION": "Beerify is like Spotify, but for beers"
   },
   "beers": {
     "TITLE": "Search for beers",
