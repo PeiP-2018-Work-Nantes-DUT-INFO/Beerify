@@ -15,6 +15,7 @@ cache:
 
 set_page:
   script:
+    - npm i
     - npm run build
     - rm -rf public/*
     - mv dist/* public/
