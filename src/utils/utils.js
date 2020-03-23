@@ -38,9 +38,6 @@ export const formatErrorMessages = (translationParent, msg) => {
 
 export const buildPayloadPagination = (pagination, category, search) => {
   const { sortBy, page, rowsPerPage } = pagination
-  // let { descending } = pagination
-  // Gets order
-  // descending = descending ? -1 : 1
 
   let query = {}
 

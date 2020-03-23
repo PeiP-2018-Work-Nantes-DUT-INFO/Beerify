@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Meta from 'vue-meta'
 import routes from '@/router/routes'
 import { store } from '@/store'
-import { checkForUpdates } from '@/utils/updates.js'
 import * as types from '@/store/mutation-types'
 
 Vue.use(Router)
@@ -16,7 +15,6 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-  checkForUpdates()
   store.commit(types.SUCCESS, null)
   store.commit(types.ERROR, null)
   return next()

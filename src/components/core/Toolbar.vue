@@ -183,18 +183,6 @@ export default {
           link: 'about',
           icon: 'mdi-help-circle-outline',
           class: 'btnAbout'
-        },
-        {
-          title: this.$t('menuItems.LOGIN'),
-          link: 'login',
-          icon: 'mdi-lock',
-          class: 'btnLogin'
-        },
-        {
-          title: this.$t('menuItems.SIGNUP'),
-          link: 'signup',
-          icon: 'mdi-plus-circle-outline',
-          class: 'btnLogin'
         }
       ]
     }
