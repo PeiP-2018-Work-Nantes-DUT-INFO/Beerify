@@ -126,7 +126,7 @@ export default {
           text: this.$i18n.t('dataTable.PICTURE'),
           value: '_id',
           sortable: false,
-          width: 100
+          width: 125
         },
         {
           text: this.$i18n.t('beers.headers.NAME'),
