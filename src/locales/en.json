@@ -77,13 +77,17 @@
     "QUANTITY": "Quantity",
     "PACKAGING": "Packaging",
     "BRANDS": "Brand",
-    "INGREDIENTS": "Ingredient",
-    "SUPPLEMENT": "More information",
+    "INGREDIENTS": "Ingredients",
+    "SUPPLEMENT": "Pictures",
     "CATEGORIES": "Categories",
     "NUTRIMENTS": "Nutritional informations",
     "ALCOHOL": "Degree of alcohol",
     "SALT": "Salt",
     "SODIUM": "Sodium",
-    "LABEL": "Label"
+    "LABEL": "Label",
+    "NOVA": "NOVA Index",
+    "INFORMATIONS": "More informations",
+    "MANUFACTURING_PLACES": "Manufacturing places",
+    "WEBSITE": "Website"
   }
 }
