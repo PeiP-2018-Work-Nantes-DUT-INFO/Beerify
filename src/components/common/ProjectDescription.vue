@@ -9,9 +9,13 @@
         <v-img
           max-width="300"
           class="mx-3"
-          src="/Nantes-Brewers-Alliance.png"
+          src="<%= BASE_URL %>Nantes-Brewers-Alliance.png"
         />
-        <v-img max-width="300" class="mx-3" src="/ESA-Dev-Board.png" />
+        <v-img
+          max-width="300"
+          class="mx-3"
+          src="<%= BASE_URL %>ESA-Dev-Board.png"
+        />
       </v-layout>
     </v-flex>
 
