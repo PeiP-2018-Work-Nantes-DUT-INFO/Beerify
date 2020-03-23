@@ -17,6 +17,7 @@ export const TOTAL_CATEGORIES = 'TOTAL_CATEGORIES'
 export const BEERS = 'BEERS'
 export const TOTAL_BEERS = 'TOTAL_BEERS'
 export const SELECT_BEER = 'BEER'
+export const PAGINATION = 'PAGINATION'
 // Landing - weather
 export const CITY = 'CITY'
 export const FORECASTS = 'FORECASTS'
