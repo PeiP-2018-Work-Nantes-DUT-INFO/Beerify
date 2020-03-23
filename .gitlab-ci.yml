@@ -14,6 +14,7 @@ cache:
     - node_modules/
 
 set_page:
+  stage: deploy
   script:
     - npm i
     - npm run build
