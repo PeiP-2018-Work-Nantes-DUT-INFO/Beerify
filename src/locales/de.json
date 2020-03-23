@@ -1,1 +1,100 @@
-{}
+{
+  "errors": {
+    "SERVER_TIMEOUT_CONNECTION_ERROR": "Server antwortet nicht, Verbindungsfehler",
+    "404": "404 Seite nicht gefunden",
+    "ERROR": "Fehler"
+  },
+  "common": {
+    "CANCEL": "Abgebrochen",
+    "WARNING": "Achtung",
+    "CLOSE": "schließen",
+    "CREATED": "Erstellt in",
+    "UPDATED": "Gelöscht unter ",
+    "GO_BACK": "Zurück"
+  },
+  "loading": {
+    "PLEASE_WAIT": "Bitte warten Sie..."
+  },
+  "footer": {
+    "MADE_WITH": "Geschehen mit",
+    "BY": "von"
+  },
+  "menuItems": {
+    "HOME": "Startseite",
+    "ABOUT": "Über uns",
+    "BEERS": "Biere",
+    "beers": {
+      "CATEGORIES": "Kategorien",
+      "BROWSE": "Suche"
+    }
+  },
+  "dataTable": {
+    "CANCEL": "Abbrechen",
+    "RESET": "Zurücksetzen",
+    "ACTIONS": "Aktionen",
+    "ROWS_PER_PAGE": "Zeilen pro seite",
+    "NO_DATA": "Keine daten",
+    "NO_RESULTS": "Keine ergebnisse",
+    "OF": "von",
+    "SEARCH": "Suche",
+    "PICTURE": "Bild",
+    "VIEW": "Details anzeigen"
+  },
+  "landing": {
+    "TITLE": "Willkommen",
+    "DESCRIPTION": "Wenn Sie das Abenteuer Bier suchen, sind Sie bei uns genau richtig. Beginnen Sie mit der Suche nach einem Ort und wir zeigen Ihnen das Wetter und eine beeindruckende Liste von Bars. ",
+    "PROJECT_DESCRIPTION": "Beerify ist ein Projekt, das vom ESA (Eliott Simon Adame) Drinking Development Team vorangetrieben wird. Es handelt sich um eine Nantes Brewers Alliance.",
+    "DESCRIPTION_VUE": "Dieses Projekt nutzt die Dienste von Open Food Facts, Openweathermap und The Beer Mapping Project. Dieses Projekt wird im Rahmen des Javascript-Kurses des IUT von Nantes realisiert.",
+    "weather": {
+      "WIND": "Wind",
+      "WIND_UNIT": "Km/h",
+      "HUMIDITY": "Luftfeuchtigkeit",
+      "PRESSURE": "Atmosphärischer Druck",
+      "PRESSURE_UNIT": "Pa"
+    },
+    "pub": {
+      "REVIEW": "Bewertung",
+      "MAP": "Karte",
+      "WEBSITE": "Website"
+    }
+  },
+  "about": {
+    "TITLE": "Über uns",
+    "DESCRIPTION": "Beerify ist wie Spotify, aber für Bier."
+  },
+  "beers": {
+    "TITLE": "Suche nach Bieren",
+    "SELECT_CATEGORY": "Wählen Sie eine Kategorie",
+    "CATEGORY_ANY": "Alle Kategorien",
+    "headers": {
+      "NAME": "Name",
+      "NUMBER_OF_UNIQUE_SCANS": "Anzahl einzigartiger Scans"
+    },
+    "categories": {
+      "TITLE": "Kategorie",
+      "DESCRIPTION": "Hier finden Sie alle verfügbaren Kategorien"
+    },
+    "CARACTERISTICS": "Merkmale",
+    "QUANTITY": "Anzahl",
+    "PACKAGING": "Verpackung",
+    "BRANDS": "Marke",
+    "INGREDIENTS": "Inhaltsstoffe",
+    "SUPPLEMENT": "Bilder",
+    "CATEGORIES": "Kategorie",
+    "NUTRIMENTS": "Nährwertangaben",
+    "ALCOHOL": "Alkoholgehalt",
+    "SALT": "Salz",
+    "SODIUM": "Natrium",
+    "LABELS": "Etikett",
+    "NOVA": "Index NOVA",
+    "INFORMATIONS": "Weitere Informationen",
+    "MANUFACTURING_PLACES": "Orte der Herstellung oder Verarbeitung",
+    "WEBSITE": "Website",
+    "STORES": "Läden",
+    "ENERGY_KJ": "Energie (KJ)",
+    "ENERGY_KCAL": "Energie (KCAL)",
+    "FAT": "Fettmasse",
+    "CARBS": "Kohlenhydrate",
+    "PROTEIN": "Protein"
+  }
+}
