@@ -15,6 +15,7 @@
         <v-img
           :src="beer.image_front_url"
           max-width="200"
+          max-height="500"
           class="mx-auto"
         ></v-img>
 
@@ -91,7 +92,7 @@
           </v-card-title>
           <v-divider></v-divider>
           <v-list dense>
-            <v-list-tile>
+            <v-list-tile v-if="beer.manufacturing_places">
               <v-list-tile-action>
                 <v-icon small>fa-industry</v-icon>
               </v-list-tile-action>
@@ -103,7 +104,7 @@
               </v-list-tile-content>
             </v-list-tile>
 
-            <v-list-tile>
+            <v-list-tile v-if="beer.link">
               <v-list-tile-action>
                 <v-icon small>fa-external-link</v-icon>
               </v-list-tile-action>
@@ -115,7 +116,7 @@
               </v-list-tile-content>
             </v-list-tile>
 
-            <v-list-tile>
+            <v-list-tile v-if="beer.stores">
               <v-list-tile-action>
                 <v-icon small>storefront</v-icon>
               </v-list-tile-action>
@@ -165,7 +166,7 @@ export default {
   metaInfo() {
     return {
       title: this.$store.getters.appTitle,
-      titleTemplate: `${this.$t('beer.TITLE')} - %s`
+      titleTemplate: `${this.$t('beers.TITLE')} - %s`
     }
   },
   components: {
