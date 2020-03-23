@@ -43,7 +43,7 @@
   "landing": {
     "TITLE": "Bienvenue",
     "DESCRIPTION": "Vous êtes au bon endroit si vous cherchez l'aventure autour de la bière. Commencez par chercher un endroit et nous vous montrerons la météo et une liste impressionnante de bars. ",
-    "PROJECT_DESCRIPTION": "Beerify est un projet poussé par l'équipe de développement de la boisson ESA (Eliott Simon Adame). Il s'agit d'une initiative de la Nantes Brewers Alliance. .",
+    "PROJECT_DESCRIPTION": "Beerify est un projet poussé par l'ESA (Eliott Simon Adame) Drinking Development Team. Il s'agit d'une initiative de la Nantes Brewers Alliance.",
     "DESCRIPTION_VUE": "Ce projet utilise les services de Open Food Facts, Openweathermap et The Beer Mapping Project. Ce projet est réalisé dans le cadre du cours Javascript de l'IUT de Nantes.",
     "weather": {
       "WIND": "Vent",

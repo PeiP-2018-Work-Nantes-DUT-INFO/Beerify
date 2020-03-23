@@ -75,7 +75,6 @@
               <v-list-tile-content
                 >{{ $t('beers.NOVA') }} :</v-list-tile-content
               >
-
               <v-list-tile-content class="align-end">
                 {{ beer.nova_group }}
               </v-list-tile-content>
@@ -96,9 +95,9 @@
               <v-list-tile-action>
                 <v-icon small>fa-industry</v-icon>
               </v-list-tile-action>
-              <v-list-tile-content
-                >{{ $t('beers.MANUFACTURING_PLACES') }} :</v-list-tile-content
-              >
+              <v-list-tile-content>
+                {{ $t('beers.MANUFACTURING_PLACES') }} :
+              </v-list-tile-content>
               <v-list-tile-content class="align-end">
                 {{ beer.manufacturing_places }}
               </v-list-tile-content>
@@ -108,9 +107,9 @@
               <v-list-tile-action>
                 <v-icon small>fa-external-link</v-icon>
               </v-list-tile-action>
-              <v-list-tile-content
-                >{{ $t('beers.WEBSITE') }} :</v-list-tile-content
-              >
+              <v-list-tile-content>
+                {{ $t('beers.WEBSITE') }} :
+              </v-list-tile-content>
               <v-list-tile-content class="align-end">
                 <a target="_blank" :href="beer.link">{{ beer.link }}</a>
               </v-list-tile-content>
@@ -120,9 +119,9 @@
               <v-list-tile-action>
                 <v-icon small>storefront</v-icon>
               </v-list-tile-action>
-              <v-list-tile-content
-                >{{ $t('beers.STORES') }} :</v-list-tile-content
-              >
+              <v-list-tile-content>
+                {{ $t('beers.STORES') }} :
+              </v-list-tile-content>
               <v-list-tile-content class="align-end">
                 {{ beer.stores }}
               </v-list-tile-content>
