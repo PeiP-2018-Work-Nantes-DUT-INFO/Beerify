@@ -13,7 +13,7 @@ cache:
   paths:
     - node_modules/
 
-set_page:
+pages:
   stage: deploy
   script:
     - npm i
