@@ -31,6 +31,10 @@ npm install
 npm update
 ```
 
+### Api keys
+
+You need to get your api keys, and put it in the .env file to make it works.
+
 ## VERY IMPORTANT
 
 This project uses Vue Router HTML5 History Mode, this means when you are in development mode you can hit Cmd+R (mac) or F5 (Windows) to reload the page and it will work, but when the project is built you will have problems, so will need to do a small change in your web server to make that work. Please read the official Vue Router documentation here: <https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations>
