@@ -1,18 +1,22 @@
 <template>
   <div>
-    <v-flex xs12 text-xs-center mt-5 mb-5>
+    <v-flex xs12 text-xs-center my-5>
       {{ $t('landing.PROJECT_DESCRIPTION') }}
-      <br />
-      <br />
-      <v-flex xs12 text-xs-center mt-5 mb-5 mx-auto>
-        <v-img width="100" src="/ESA-Dev-Board.png" />
-        <v-img width="100" src="/Nantes-Brewers-Alliance.png" />
-      </v-flex>
     </v-flex>
 
-    <v-flex xs12 text-xs-center mb-5>
+    <v-flex xs12 my-5>
+      <v-layout row justify-center>
+        <v-img
+          max-width="300"
+          class="mx-3"
+          src="/Nantes-Brewers-Alliance.png"
+        />
+        <v-img max-width="300" class="mx-3" src="/ESA-Dev-Board.png" />
+      </v-layout>
+    </v-flex>
+
+    <v-flex xs12 text-xs-center my-5>
       {{ $t('landing.DESCRIPTION_VUE') }}
-      <br />
     </v-flex>
   </div>
 </template>

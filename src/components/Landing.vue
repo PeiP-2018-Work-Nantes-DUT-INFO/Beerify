@@ -1,4 +1,5 @@
 <template>
+  <!-- PAGE D'ACCUEIL -->
   <v-container fluid>
     <v-layout row wrap>
       <Heading :title="$t('landing.TITLE')" />

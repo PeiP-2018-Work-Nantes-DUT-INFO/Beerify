@@ -12,7 +12,7 @@ This project is based on [vue-skeleton-mvp](https://github.com/davellanedam/vue-
 
 ### Using Git (recommended)
 
-1.  Clone the project from github.
+1. Clone the project from github.
 
 ```bash
 git clone https://gitlab.univ-nantes.fr/esa-drinking-development-board/beerify
@@ -20,8 +20,8 @@ git clone https://gitlab.univ-nantes.fr/esa-drinking-development-board/beerify
 
 ### Using manual download ZIP
 
-1.  Download repository
-2.  Uncompress to your desired directory
+1. Download repository
+2. Uncompress to your desired directory
 
 ### Install npm dependencies after installing (Git or manual download)
 
@@ -30,6 +30,10 @@ cd beerify
 npm install
 npm update
 ```
+
+### Api keys
+
+You need to get your api keys, and put it in the .env file to make it works.
 
 ## VERY IMPORTANT
 

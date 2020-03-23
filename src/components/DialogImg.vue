@@ -1,4 +1,6 @@
 <template>
+  <!-- AFFICHAGE D'UNE IMAGE DANS LA CARD IMAGES DANS UNE BIERE -->
+  <!-- V-DIALOG PERMET D'OUVRIR UNE FENTRE DE DIALOG POUR AGRANDIR L'IMAGE -->
   <v-dialog v-model="dialog" width="400">
     <template v-slot:activator="{ on }">
       <v-hover>

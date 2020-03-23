@@ -1,12 +1,18 @@
 <template>
+  <!-- CARD NUTRIMENTS DANS UNE BIERE -->
   <v-card class="mt-3">
+    <!-- TITRE -->
     <v-card-title>
       <h4>{{ $t('beers.NUTRIMENTS') }}</h4>
       <v-spacer></v-spacer>
       <v-icon>live_help</v-icon>
     </v-card-title>
+
     <v-divider></v-divider>
+
+    <!-- CONTENT -->
     <v-list dense>
+      <!-- HEADER -->
       <v-list-tile>
         <v-list-tile-content></v-list-tile-content>
         <v-list-tile-content class="align-end">
@@ -16,6 +22,8 @@
           33 cl
         </v-list-tile-content>
       </v-list-tile>
+
+      <!-- ROWS -->
       <v-list-tile v-for="row in rows" :key="row.text">
         <v-list-tile-content>
           {{ $t('beers.' + row.text) }} :
@@ -96,8 +104,7 @@ export default {
     }
   },
   props: {
-    nutriments: Object,
-    image: String
+    nutriments: Object
   }
 }
 </script>
