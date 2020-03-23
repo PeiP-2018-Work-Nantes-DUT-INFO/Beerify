@@ -109,11 +109,6 @@ export default {
       delayTimer: null,
       dialog: false,
       search: '',
-      pagination: {
-        descending: true,
-        rowsPerPage: 10,
-        sortBy: 'unique_scans_n'
-      },
       editedItem: {},
       defaultItem: {},
       fieldsToSearch: []
@@ -159,6 +154,14 @@ export default {
           width: 100
         }
       ]
+    },
+    pagination: {
+      set(value) {
+        this.setPagination(value)
+      },
+      get() {
+        return this.$store.state.beersBrowser.pagination
+      }
     },
     categories() {
       return Array.prototype.concat(this.$store.getters.tabCategories, [
@@ -213,7 +216,7 @@ export default {
     this.doGetCategories()
   },
   methods: {
-    ...mapActions(['getCategories', 'getBeers', 'selectBeer']),
+    ...mapActions(['getCategories', 'getBeers', 'selectBeer', 'setPagination']),
     async doGetCategories() {
       try {
         await this.getCategories()

@@ -4,7 +4,8 @@ import { handleError } from '@/utils/utils.js'
 
 const getters = {
   beers: state => state.beers,
-  totalBeers: state => state.totalBeers
+  totalBeers: state => state.totalBeers,
+  pagination: state => state.pagination
 }
 
 const actions = {
@@ -45,10 +46,16 @@ const actions = {
   },
   selectBeer({ commit }, payload) {
     commit(types.SELECT_BEER, payload)
+  },
+  setPagination({ commit }, payload) {
+    commit(types.PAGINATION, payload)
   }
 }
 
 const mutations = {
+  [types.PAGINATION](state, pagination) {
+    state.pagination = pagination
+  },
   [types.BEERS](state, beers) {
     state.beers = beers
   },
@@ -63,7 +70,12 @@ const mutations = {
 const state = {
   beers: [],
   selectedBeer: null,
-  totalBeers: 0
+  totalBeers: 0,
+  pagination: {
+    descending: true,
+    rowsPerPage: 10,
+    sortBy: 'unique_scans_n'
+  }
 }
 
 export default {
