@@ -1,6 +1,8 @@
 <template>
+  <!-- CARD POUR AFFICHER UN BAR SUR LA PAGE D'ACCUEIL -->
   <v-hover>
     <v-card slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`" dark>
+      <!-- TEXT -->
       <v-card-title primary-title class="pt-3 pb-0">
         <div>
           <div class="title">{{ pub.name }}</div>
@@ -17,16 +19,21 @@
                 pub.country
             }}
           </div>
+
+          <!-- PHONE -->
           <div class="mt-1">
             <v-icon small>mdi-phone</v-icon>
             <span class="ml-2">{{ pub.phone }}</span>
           </div>
         </div>
       </v-card-title>
+
+      <!-- LINKS -->
       <v-card-text
         class="py-2"
         :class="right ? 'text-xs-left' : 'text-xs-right'"
       >
+        <!-- REVIEW -->
         <v-tooltip top>
           <template v-slot:activator="{ on }">
             <v-btn
@@ -43,6 +50,8 @@
           </template>
           <span>{{ $t('landing.pub.REVIEW') }}</span>
         </v-tooltip>
+
+        <!-- WEBSITE -->
         <v-tooltip top>
           <template v-slot:activator="{ on }">
             <v-btn
@@ -59,6 +68,8 @@
           </template>
           <span>{{ $t('landing.pub.WEBSITE') }}</span>
         </v-tooltip>
+
+        <!-- MAP -->
         <v-tooltip top>
           <template v-slot:activator="{ on }">
             <v-btn

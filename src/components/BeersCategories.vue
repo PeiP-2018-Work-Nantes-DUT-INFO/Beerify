@@ -3,6 +3,7 @@
     <Heading :title="$t('beers.categories.TITLE')" />
     <Description :description="$t('beers.categories.DESCRIPTION')" />
     <v-container grid-list-md>
+      <!-- LISTE DES CATEGORIES -->
       <v-layout wrap>
         <v-flex
           v-for="cat in categories"

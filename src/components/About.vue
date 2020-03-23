@@ -4,6 +4,7 @@
       <Heading :title="$t('about.TITLE')" />
       <Description :description="$t('about.DESCRIPTION')" />
     </v-layout>
+    <!-- CONTENT -->
     <ProjectDescription />
   </v-container>
 </template>

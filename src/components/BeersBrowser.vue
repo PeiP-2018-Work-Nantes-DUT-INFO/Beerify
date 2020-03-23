@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- HEAD BAR -->
     <v-layout wrap>
       <v-flex xs12 sm12 md4 mt-3 pl-4>
         <v-toolbar-title>{{ $t('beers.TITLE') }}</v-toolbar-title>
@@ -26,6 +27,8 @@
         ></v-select>
       </v-flex>
     </v-layout>
+
+    <!-- DATA TABLE -->
     <v-data-table
       must-sort
       :loading="dataTableLoading"
