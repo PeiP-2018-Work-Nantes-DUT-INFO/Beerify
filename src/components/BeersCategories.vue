@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
-    <Heading :title="$t('categories.TITLE')" />
-    <Description :description="$t('categories.DESCRIPTION')" />
+    <Heading :title="$t('beers.categories.TITLE')" />
+    <Description :description="$t('beers.categories.DESCRIPTION')" />
     <v-container grid-list-md>
       <v-layout wrap>
         <v-flex
@@ -41,7 +41,7 @@ export default {
   metaInfo() {
     return {
       title: this.$store.getters.appTitle,
-      titleTemplate: `${this.$t('categories.TITLE')} - %s`
+      titleTemplate: `${this.$t('beers.categories.TITLE')} - %s`
     }
   },
   computed: {

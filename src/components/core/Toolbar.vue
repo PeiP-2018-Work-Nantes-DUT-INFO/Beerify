@@ -24,7 +24,7 @@
 
         <v-list-group prepend-icon="fa-beer" no-action>
           <v-list-tile slot="activator">
-            <v-list-tile-title>{{ $t('beersItems.BEERS') }}</v-list-tile-title>
+            <v-list-tile-title>{{ $t('menuItems.BEERS') }}</v-list-tile-title>
           </v-list-tile>
           <v-list-tile
             v-for="(item, index) in beersItems"
@@ -71,7 +71,7 @@
         <v-menu offset-y class="hidden-sm-and-down">
           <v-btn slot="activator" flat class="btnBeers">
             <v-icon>fa-beer</v-icon>
-            &nbsp;{{ $t('beersItems.BEERS') }}
+            &nbsp;{{ $t('menuItems.BEERS') }}
           </v-btn>
           <v-list>
             <v-list-tile
@@ -158,13 +158,13 @@ export default {
     beersItems() {
       return [
         {
-          title: this.$t('beersItems.CATEGORIES'),
+          title: this.$t('menuItems.beers.CATEGORIES'),
           link: 'beers-categories',
           icon: 'category',
           class: 'btnBeersCategories'
         },
         {
-          title: this.$t('beersItems.BROWSE'),
+          title: this.$t('menuItems.beers.BROWSE'),
           link: 'beers-browser',
           icon: 'search',
           class: 'btnBeersBrowser'
