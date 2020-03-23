@@ -4,6 +4,18 @@ import { buildSuccess, handleError } from '@/utils/utils.js'
 
 const getters = {
   categories: state => state.categories,
+  tabCategories: (state, moduleGetters, rootState) => {
+    const categories = []
+    for (const tag in state.categories) {
+      categories.push({
+        text:
+          state.categories[tag].name[rootState.locale.locale] ||
+          state.categories[tag].name.en,
+        value: tag
+      })
+    }
+    return categories
+  },
   totalCategories: state => state.totalCategories
 }
 
@@ -16,17 +28,18 @@ const actions = {
         .getBeersCategories()
         .then(response => {
           if (response.status === 200) {
-            const data = response.data
-            const total = Object.keys(response.data).length
-            const categories = []
-            for (const tag in data) {
-              categories.push({
-                text:
-                  data[tag].name[rootState.locale.locale] || data[tag].name.en,
-                value: tag
-              })
-            }
-            commit(types.CATEGORIES, categories)
+            const data = Object.keys(response.data)
+              .filter(
+                key =>
+                  response.data[key].parents &&
+                  response.data[key].parents.indexOf('en:beers') > -1
+              )
+              .reduce(
+                (res, key) => Object.assign(res, { [key]: response.data[key] }),
+                {}
+              )
+            const total = Object.keys(data).length
+            commit(types.CATEGORIES, data)
             commit(types.TOTAL_CATEGORIES, total)
             buildSuccess(null, commit, resolve)
           }

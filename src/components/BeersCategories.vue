@@ -45,16 +45,8 @@ export default {
     }
   },
   computed: {
-    displayLocale() {
-      return this.$i18n.locale
-    },
     categories() {
-      return this.$store.state.beersCategories.categories
-    }
-  },
-  watch: {
-    displayLocale() {
-      this.getCategories()
+      return this.$store.getters.tabCategories
     }
   },
   mounted() {
