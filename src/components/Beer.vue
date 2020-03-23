@@ -140,8 +140,8 @@
           <v-card-text>
             <v-layout wrap>
               <DialogImg
-                v-for="image in beer.selected_images"
-                :key="Object.keys(image)"
+                v-for="(image, index) in beer.selected_images"
+                :key="index"
                 :img="image"
                 class="ml-2"
               />

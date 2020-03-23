@@ -22,7 +22,7 @@
       </v-card-actions>
       <v-divider></v-divider>
 
-      <v-card-media :src="img.display.fr" max-width="400"></v-card-media>
+      <v-img :src="img.display.fr" max-width="400"></v-img>
     </v-card>
   </v-dialog>
 </template>

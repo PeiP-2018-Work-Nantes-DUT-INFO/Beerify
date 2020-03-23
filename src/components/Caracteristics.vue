@@ -33,7 +33,7 @@
 export default {
   props: {
     brands: String,
-    packagings: Array,
+    packagings: [String, Array],
     quantity: String
   }
 }
