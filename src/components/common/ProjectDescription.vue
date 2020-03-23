@@ -9,12 +9,12 @@
         <v-img
           max-width="300"
           class="mx-3"
-          src="<%= BASE_URL %>Nantes-Brewers-Alliance.png"
+          :src="`${publicPath}Nantes-Brewers-Alliance.png`"
         />
         <v-img
           max-width="300"
           class="mx-3"
-          src="<%= BASE_URL %>ESA-Dev-Board.png"
+          :src="`${publicPath}ESA-Dev-Board.png`"
         />
       </v-layout>
     </v-flex>
@@ -27,7 +27,12 @@
 
 <script>
 export default {
-  name: 'ProjectDescription'
+  name: 'ProjectDescription',
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  }
 }
 </script>
 
